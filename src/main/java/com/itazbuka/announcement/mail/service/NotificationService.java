@@ -26,8 +26,8 @@ public class NotificationService {
         SimpleMailMessage mail = new SimpleMailMessage();
         mail.setTo(reciverMail);
         mail.setFrom("djordje.colovic@it-azbuka.com");
-        mail.setSubject("Promo radionica test");
-        mail.setText(MailUtil.getMailText());
+        mail.setSubject("TEST Poziv na promotivnu radionicu \"Web\" subota 18h - IT azbuka");
+        mail.setText(MailUtil.getMailText( "29.10.2017", "nedelju", "13"));
 
         javaMailSender.send(mail);
     }

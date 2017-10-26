@@ -5,12 +5,12 @@ package com.itazbuka.announcement.mail;
  */
 public class MailUtil {
 
-    public static String getMailText(){
+    public static String getMailText(String date, String dateName, String time){
         String mail =  new String("Poštovani,\n" +
                 "\n" +
                 "Hvala na interesovanju koje ste pokazali za naše besplatne radionice.\n" +
                 "\n" +
-                "Vaše dete možete dovesti u subotu (28.10.2017.) od 17h na našu adresu Terazije 12(drugi sprat liftom ili treći sprat stepenicama). Trajanje radionice je 1h, o samoj školici i programu kursa moći ćete da se informišete posle radionice.\n" +
+                "Vaše dete možete dovesti u " +dateName + " (" + date + ") od " + time +"h na našu adresu Terazije 12(drugi sprat liftom ili treći sprat stepenicama). Trajanje radionice je 1h, o samoj školici i programu kursa moći ćete da se informišete posle radionice.\n" +
                 "\n" +
                 "Zamolio bih Vas da potvrdite da li Vam ovaj termin odgovara ili da pokušamo da nađemo novi.\n" +
                 "\n" +
